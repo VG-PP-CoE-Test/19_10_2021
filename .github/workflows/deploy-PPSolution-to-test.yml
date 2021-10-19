@@ -63,6 +63,7 @@ jobs:
         password-secret: ${{ secrets[env.sourceEnvironmentSecretName] }}
         solution-name: ${{ env.solutionName }}
         environment-url: ${{ env.sourceEnvironmentUrl }}
+        solution-version: "1.0.0.1"
         solution-output-file: "${{ env.solutionName }}.zip"
 
     - name: 'Unpack the exported solution'
