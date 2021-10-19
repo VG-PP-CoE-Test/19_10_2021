@@ -118,6 +118,7 @@ jobs:
         user-name: ${{ env.targetEnvironmentUserId }}
         password-secret: ${{ secrets[env.targetEnvironmentSecretName] }}
         solution-file: "${{ env.solutionName }}_managed.zip"
+        import-as-holding: true
 
     - name: 'Upload the managed solution to artifact'
       uses: actions/upload-artifact@v2
