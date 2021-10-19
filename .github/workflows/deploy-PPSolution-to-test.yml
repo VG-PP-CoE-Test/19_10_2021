@@ -120,7 +120,7 @@ jobs:
         solution-file: "${{ env.solutionName }}_managed.zip"
         import-as-holding: true
     
-    - name: 'upgrade-solution'
+    - name: 'Upgradesolution'
       uses: microsoft/powerplatform-actions/upgrade-solution@v0.1.8
       with:
         environment-url: ${{ env.targetEnvironmentUrl }}
