@@ -1,0 +1,9 @@
+<environmentvariabledefinition schemaname="cr90a_19_10_2021_YN">
+  <displayname default="19_10_2021_YN">
+    <label description="19_10_2021_YN" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <type>100000002</type>
+</environmentvariabledefinition>

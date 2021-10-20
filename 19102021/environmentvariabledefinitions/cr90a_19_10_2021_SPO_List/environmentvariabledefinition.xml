@@ -1,0 +1,14 @@
+<environmentvariabledefinition schemaname="cr90a_19_10_2021_SPO_List">
+  <apiid>/providers/microsoft.powerapps/apis/shared_sharepointonline</apiid>
+  <displayname default="19_10_2021_SPO_List">
+    <label description="19_10_2021_SPO_List" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <parameterkey>table</parameterkey>
+  <parentdefinitionid>
+    <schemaname>cr90a_19_10_2021_SPO_Site</schemaname>
+  </parentdefinitionid>
+  <type>100000004</type>
+</environmentvariabledefinition>
