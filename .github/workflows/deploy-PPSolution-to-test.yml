@@ -119,12 +119,6 @@ jobs:
         password-secret: ${{ secrets[env.targetEnvironmentSecretName] }}
         solution-file: "${{ env.solutionName }}_managed.zip"
         import-as-holding: true
-    
-    - name: 'Upload the managed solution to artifact'
-      uses: actions/upload-artifact@v2
-      with:
-        name: ${{env.SolutionName}}
-        path: "${{ env.solutionName }}_managed.zip"
         
     - name: 'upgrade-solution'
       uses: microsoft/powerplatform-actions/upgrade-solution@v0
@@ -133,7 +127,13 @@ jobs:
         user-name: ${{ env.targetEnvironmentUserId }}
         password-secret: ${{ secrets[env.targetEnvironmentSecretName] }}
         solution-name: ${{ env.solutionName }}
-        
+    
+    - name: 'Upload the managed solution to artifact'
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{env.SolutionName}}
+        path: "${{ env.solutionName }}_managed.zip"
+
     # Reading the different power platform action status to upload the status as artifact, to easily communicate it using other jobs.
     - name: Save job status to a file (status.json)
       if: always()
