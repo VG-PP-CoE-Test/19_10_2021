@@ -127,7 +127,7 @@ jobs:
         path: "${{ env.solutionName }}_managed.zip"
         
     - name: 'Upgrade solution'
-      uses: microsoft/powerplatform-actions/upgrade-solution@v0.1.8
+      uses: microsoft/powerplatform-actions/upgrade-solution@v0
       with:
         environment-url: ${{ env.targetEnvironmentUrl }}
         user-name: ${{ env.targetEnvironmentUserId }}
